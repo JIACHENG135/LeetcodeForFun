@@ -1,18 +1,18 @@
 from collections import defaultdict 
 import random
-# class Test:
-#     def __init__(self,vertices,numComp):
-#         self.edges = []
-#         self.
-#         cc = 0
-#         while cc<numComp:
-#             verticesSet = set()
-#             while len(vertices)<vertices:
-#                 randomU = random.randint(1+vertices*cc,vertices**(cc+1))
-#                 randomV = random.randint(1+vertices*cc,vertices**(cc+1))
-#                 if randomU!=randomV:
-#                     verticesSet |= set([randomU,randomV])
-#                     self.edges.append([randomU,randomU])
+class Test:
+    def __init__(self,vertices,numComp):
+        self.edges = []
+        self.
+        cc = 0
+        while cc<numComp:
+            verticesSet = set()
+            while len(vertices)<vertices:
+                randomU = random.randint(1+vertices*cc,vertices**(cc+1))
+                randomV = random.randint(1+vertices*cc,vertices**(cc+1))
+                if randomU!=randomV:
+                    verticesSet |= set([randomU,randomV])
+                    self.edges.append([randomU,randomU])
 
 class Graph: 
     def __init__(self,vertices): 
